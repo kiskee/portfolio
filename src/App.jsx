@@ -20,7 +20,16 @@ function App() {
             </div>
         </div>
     </header>
-    
+    <div className="burbujas">
+  <div className="burbuja"></div>
+  <div className="burbuja"></div>
+  <div className="burbuja"></div>
+  <div className="burbuja"></div>
+  <div className="burbuja"></div>
+  <div className="burbuja"></div>
+  <div className="burbuja"></div>
+  <div className="burbuja"></div>
+  </div>
     </>
   )
 }

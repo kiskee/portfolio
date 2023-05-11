@@ -4,4 +4,99 @@
 
 body{
     background: black;
+    overflow:hidden;
 }
+
+header {
+    overflow:hidden;
+}
+
+
+.burbuja{
+    background: #fff;
+    opacity: .7;
+    position: absolute;
+    bottom: -10;
+    animation: burbujas 3s linear infinite;
+  }
+  
+  .burbuja:nth-child(1){
+     width: 10px;
+     height: 10px;
+     left: 5%;
+     animation-duration: 6s;
+     animation-delay: 5s;
+     border-radius: 50%;
+  }
+  .burbuja:nth-child(2){
+     width: 17px;
+     height: 17px;
+     left: 15%;
+     animation-duration: 6s;
+     animation-delay: 3s;
+     border-radius: 50%;
+  }
+  .burbuja:nth-child(3){
+    width: 10px;
+    height: 10px;
+    left: 45%;
+    animation-duration: 8s;
+    animation-delay: 4s;
+    border-radius: 50%;
+ }
+ .burbuja:nth-child(4){
+    width: 13px;
+    height: 13px;
+    left: 35%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+    border-radius: 50%;
+ }
+ .burbuja:nth-child(5){
+    width: 29px;
+    height: 29px;
+    left: 65%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    border-radius: 50%;
+ }
+ .burbuja:nth-child(6){
+    width: 10px;
+    height: 10px;
+    left: 60%;
+    animation-duration: 6s;
+    animation-delay: 5s;
+    border-radius: 50%;
+ }
+ .burbuja:nth-child(7){
+    width: 13px;
+    height: 13px;
+    left: 75%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+    border-radius: 50%;
+ }
+ .burbuja:nth-child(8){
+    width: 10px;
+    height: 10px;
+    left: 7%;
+    animation-duration: 6s;
+    animation-delay: 7s;
+ }
+  
+  @keyframes burbujas{
+    0%{
+      bottom: 0;
+      opacity: 0;
+    }
+    30%{
+      transform: translateX(70px);
+    }
+    50%{
+      opacity: .5;
+    }
+    100%{
+      bottom: 100%;
+      opacity: 0;
+    }
+  }
