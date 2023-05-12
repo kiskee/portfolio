@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    // Some useful comment
+    fontFamily: {
+      'nunito': ['nunito', 'sans-serif'],
+      'MyFont': ['"Nanum Gothic Coding"', 'monospace'] // Ensure fonts with spaces have " " surrounding it.
+    },
   },
   plugins: [],
 }

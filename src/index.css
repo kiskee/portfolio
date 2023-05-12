@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.font-MyFont {
+   font-family: 'Nanum Gothic Coding', monospace;
+ }
 
 body{
     background: black;
@@ -16,8 +23,8 @@ header {
     background: #fff;
     opacity: .7;
     position: absolute;
-    bottom: -10;
-    animation: burbujas 3s linear infinite;
+    bottom: 0;
+    animation: burbujas 5s linear infinite;
   }
   
   .burbuja:nth-child(1){
@@ -77,12 +84,58 @@ header {
     border-radius: 50%;
  }
  .burbuja:nth-child(8){
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     left: 7%;
-    animation-duration: 6s;
+    animation-duration: 10s;
     animation-delay: 7s;
+    background-image: url(./assets/js.svg);
+    background-repeat: no-repeat, repeat;
  }
+ .burbuja:nth-child(9){
+   width: 23px;
+   height: 23px;
+   left: 15%;
+   animation-duration: 10s;
+   animation-delay: 3s;
+   background-image: url(./assets/html.svg);
+   background-repeat: no-repeat, repeat;
+}
+
+.burbuja:nth-child(10){
+   width: 23px;
+   height: 23px;
+   left: 25%;
+   animation-duration: 10s;
+   animation-delay: 3s;
+   background-image: url(./assets/react2.svg);
+   background-repeat: no-repeat, repeat;
+   background-color: black;
+   animation: burbujas 10s linear infinite ,girar 2s linear infinite !important;
+}
+
+.burbuja:nth-child(11){
+   width: 20px;
+   height: 20px;
+   left: 55%;
+   animation-duration: 5s;
+   animation-delay: 7s;
+   background-image: url(./assets/js.svg);
+   background-repeat: no-repeat, repeat;
+}
+
+.burbuja:nth-child(11){
+   width: 23px;
+   height: 23px;
+   left: 80%;
+   animation-duration: 5s;
+   animation-delay: 7s;
+   background-image: url(./assets/pyhtonW.svg);
+   background-repeat: no-repeat, repeat;
+   background-color: black;
+}
+
+
   
   @keyframes burbujas{
     0%{
@@ -100,3 +153,15 @@ header {
       opacity: 0;
     }
   }
+
+  @keyframes girar {
+   0%{
+      transform: rotate(0deg);
+   }
+   50%{
+      transform: rotate(180deg);
+   }
+   100%{
+      transform: rotate(360deg);
+   }
+ }
