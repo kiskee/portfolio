@@ -60,8 +60,8 @@ header {
     border-radius: 50%;
  }
  .burbuja:nth-child(5){
-    width: 29px;
-    height: 29px;
+    width: 19px;
+    height: 19px;
     left: 65%;
     animation-duration: 6s;
     animation-delay: 3s;
