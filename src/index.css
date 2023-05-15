@@ -93,8 +93,8 @@ header {
     background-repeat: no-repeat, repeat;
  }
  .burbuja:nth-child(9){
-   width: 23px;
-   height: 23px;
+   width: 20px;
+   height: 20npx;
    left: 15%;
    animation-duration: 10s;
    animation-delay: 3s;
@@ -133,6 +133,24 @@ header {
    background-image: url(./assets/pyhtonW.svg);
    background-repeat: no-repeat, repeat;
    background-color: black;
+}
+.burbuja:nth-child(12){
+   width: 20px;
+   height: 20px;
+   left: 90%;
+   animation-duration: 5s;
+   animation-delay: 3s;
+   background-image: url(./assets/js.svg);
+   background-repeat: no-repeat, repeat;
+}
+.burbuja:nth-child(13){
+   width: 20px;
+   height: 20px;
+   left: 70%;
+   animation-duration: 5s;
+   animation-delay: 7s;
+   background-image: url(./assets/js.svg);
+   background-repeat: no-repeat, repeat;
 }
 
 
