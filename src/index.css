@@ -18,6 +18,10 @@ header {
     overflow:hidden;
 }
 
+.NoPage{
+   background-color: white !important;
+}
+
 
 .burbuja{
     background: #fff;
